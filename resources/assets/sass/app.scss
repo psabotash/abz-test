@@ -1,0 +1,14 @@
+@import '~jquery-ui/themes/base/all.css';
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

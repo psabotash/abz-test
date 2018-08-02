@@ -17,6 +17,16 @@ function disable_edit(){
     $("#btn-apply-edit").hide();
 }
 $(document).ready(function(){
+	$.ajaxSetup({
+       	"error": function(jqXHR, status, thrownError) {
+        	$.alert({
+            	title: 'Error!',
+            	type: 'red',
+            	closeIcon: true,
+            	content:  "Error [" + jqXHR.status + "]. Please reload the page and try again. If this does not work, please contact the server administrator. ",
+        	});
+    	}
+    	});
     $(document).click(function() {
         if(event.target.id != "create_inputParentName"){
             $("#ajax_create_search_employee").css("visibility", "hidden"); 
